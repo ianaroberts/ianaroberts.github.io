@@ -18,11 +18,24 @@ body, html {
     background-attachment: fixed;
   }
    .middleground {
-   background-color:aqua;
    height:1000px;
    width:100%;
+   top:-1000px;
    font-size:36px;
+   position:relative;
+   z-index:2;
+  }
+   .frostedground {
+   position:relative;
+   z-index:1;
+   background-color: rgba(255, 255, 255, 0.2);
+   height:1000px;
+   width:100%;
    opacity:0.6;
+   filter:alpha(opacity=60);
+   -moz-opacity:0,6;
+   -webkit-filter: blur(5px); /* Safari */
+    filter: blur(5px);
   }
    .bottomground {
    background-image: url("http://wallpaperrs.com/uploads/nature/earth-scenic-highres-cloud-sea-beach-sky-nature-horizon-nice-wallpaper-88363-14297742556.jpg");
@@ -43,6 +56,7 @@ body, html {
 <h1> Ian Roberts' First try site </h1>  
 </div>
 
+<div class="frostedground"></div>
 <div class="middleground">
 Profesional stuff goes here.
   
