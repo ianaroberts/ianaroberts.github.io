@@ -22,6 +22,11 @@ $(document).ready(function()
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
   if (isSafari == true)
   {
+     document.body.addEventListener('touchmove',function(event)
+     {
+        event.preventDefault();
+     });
+    
     var scrollX = 0,
       scrollY = 0,
       scrollMinX = 0,
