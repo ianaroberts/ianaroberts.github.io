@@ -17,11 +17,12 @@ $(document).ready(function()
     midcity[0].style.setProperty('--shift', pixels - (windowYOffset * mSpeed) + "px");
     farcity[0].style.setProperty('--shift', -(windowYOffset * fSpeed) + "px");
     
-    if ((windowYOffset*5) > pixels)
+    if (windowYOffset > pixels)
     {
       mSpeed = 2;
       fSpeed = 2;
-    } else
+    }
+    if (windowYOffset <= pixels)
     {
       mSpeed = 0.5;
       fSpeed = 0.25;
