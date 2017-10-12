@@ -16,7 +16,8 @@ $(document).ready(function()
     //Set the shift variable to the new value
     midcity[0].style.setProperty('--shift', pixels - (windowYOffset * mSpeed) + "px");
     farcity[0].style.setProperty('--shift', -(windowYOffset * fSpeed) + "px");
-    
+    console.log(pixels);
+    console.log(windowYOffset);
     if (windowYOffset > pixels)
     {
       mSpeed = 2;
