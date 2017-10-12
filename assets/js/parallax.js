@@ -18,12 +18,11 @@ $(document).ready(function()
     farcity[0].style.setProperty('--shift', -(windowYOffset * fSpeed) + "px");
     console.log(pixels);
     console.log(windowYOffset);
-    if (windowYOffset > pixels)
+    if (windowYOffset > (pixels * 4))
     {
       mSpeed = 2;
       fSpeed = 2;
-    }
-    if (windowYOffset <= pixels)
+    } else
     {
       mSpeed = 0.5;
       fSpeed = 0.25;
