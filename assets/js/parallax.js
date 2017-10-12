@@ -17,7 +17,7 @@ $(document).ready(function()
     midcity[0].style.setProperty('--shift', pixels - (windowYOffset * mSpeed) + "px");
     farcity[0].style.setProperty('--shift', -(windowYOffset * fSpeed) + "px");
     
-    if ((windowYOffset + "px") > (pixels + "px"))
+    if (windowYOffset*3 > pixels)
     {
       mSpeed = 2;
       fSpeed = 2;
