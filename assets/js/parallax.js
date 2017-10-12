@@ -16,6 +16,16 @@ $(document).ready(function()
     //Set the shift variable to the new value
     midcity[0].style.setProperty('--shift', pixels - (windowYOffset * mSpeed) + "px");
     farcity[0].style.setProperty('--shift', -(windowYOffset * fSpeed) + "px");
+    
+    if (windowYOffset > pixels)
+    {
+      mSpeed = 2;
+      fSpeed = 2;
+    } else
+    {
+      mSpeed = 0.5;
+      fSpeed = 0.25;
+    }
   });
 
   //Stop Safari from ruining the parallax illusion
