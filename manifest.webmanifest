@@ -1,0 +1,18 @@
+{
+  "name": "Vivian Roberts",
+  "short_name": "Vivian",
+  "description": "Vivian's Personal Website",
+  "theme_color": "#f4b3aa",
+  "background_color": "#eac6a6",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "http://www.iroberts.me/",
+  "icons":
+  [
+    {
+      "src": "assets/images/glyphicon-qrcode.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    }
+  ]
+}
